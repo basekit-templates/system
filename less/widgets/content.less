@@ -1,0 +1,444 @@
+// -----------------------------
+// Timeline Template: CSS > Widgets > Content Widget
+// -----------------------------
+
+h1, .heading--1 {color: @color__h1--text;}
+h2, .heading--2 {color: @color__h2--text;}
+h3, .heading--3 {color: @color__h3--text;}
+h4, .heading--4 {color: @color__h4--text;}
+p, body {color: @color__p--text;}
+
+
+.content, .post-body, .product-body {
+
+
+	// H1
+	// ------------------------------
+
+
+	h1 {
+		margin: 1em 0;
+		@media @bp-global-medium {
+			font-size: bkscale(@font__h1--font-size, 0.9);
+			line-height: bkscale(@font__h1--line-height, 0.9);
+		}
+
+		@media @bp-global-small {
+			font-size: bkscale(@font__h1--font-size, 0.8);
+			line-height: bkscale(@font__h1--line-height, 0.8);
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			width: 1em;
+			height: 3px;
+			background-color: @color__h1--text;
+			margin-top: 0.3em;
+		}
+	}
+
+
+
+
+	// H2
+	// ------------------------------
+
+
+	h2 {
+		margin: 1em 0;
+		@media @bp-global-medium {
+			font-size: bkscale(@font__h2--font-size, 0.9);
+			line-height: bkscale(@font__h2--line-height, 0.9);
+		}
+
+		@media @bp-global-small {
+			font-size: bkscale(@font__h2--font-size, 0.8);
+			line-height: bkscale(@font__h2--line-height, 0.8);
+		}
+	}
+
+
+
+
+	// H3
+	// ------------------------------
+
+
+	h3 {
+		margin: 1em 0;
+		@media @bp-global-medium {
+			font-size: bkscale(@font__h3--font-size, 0.9);
+			line-height: bkscale(@font__h3--line-height, 0.9);
+		}
+
+		@media @bp-global-small {
+			font-size: bkscale(@font__h3--font-size, 0.8);
+			line-height: bkscale(@font__h3--line-height, 0.8);
+		}
+	}
+
+
+
+
+	// H4
+	// ------------------------------
+
+
+	h4 {
+		margin: 1em 0;
+		@media @bp-global-medium {
+			font-size: bkscale(@font__h4--font-size, 0.9);
+			line-height: bkscale(@font__h4--line-height, 0.9);
+		}
+
+		@media @bp-global-small {
+			font-size: bkscale(@font__h4--font-size, 0.8);
+			line-height: bkscale(@font__h4--line-height, 0.8);
+		}
+	}
+
+
+
+
+	// Paragraph and Strings
+	// ------------------------------
+
+
+	p, &  {
+		margin-bottom: 1em;
+		@media @bp-global-medium {
+			font-size: bkscale(@font__p--font-size, 0.9);
+			line-height: bkscale(@font__p--line-height, 0.9);
+		}
+
+		@media @bp-global-small {
+			font-size: bkscale(@font__p--font-size, 0.8);
+			line-height: bkscale(@font__p--line-height, 0.8);
+		}
+	}
+
+
+
+
+	// Link
+	// ------------------------------
+
+
+	a {
+		box-shadow: inset 0px -2px 0px 0px @color__button--background;
+		display: inline-block;
+		line-height: 1.5;
+		-webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        color: @color__link--text;
+
+		&:hover {
+			text-decoration: none;
+			box-shadow: inset 0px -2px 0px 0px @color__button--background--hover, 0px 0px 0px 7px fade(@color__button--background--hover, 7%);
+            background-color: fade(@color__button--background--hover, 7%);
+		}
+	}
+
+
+
+
+	// Unordered List
+	// ------------------------------
+
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			padding: 0 0 0 3em;
+			margin: 0 0 1em 0;
+			font-size: bkscale(@font__p--font-size, 0.9);
+			line-height: bkscale(@font__p--line-height, 0.9);
+			list-style-type: none;
+			position: relative;
+
+			@media @bp-global-medium {
+				font-size: bkscale(@font__p--font-size, 0.8);
+				line-height: bkscale(@font__p--line-height, 0.8);
+				padding-left: 2em;
+			}
+
+			@media @bp-global-small {
+				font-size: bkscale(@font__p--font-size, 0.7);
+				line-height: bkscale(@font__p--line-height, 0.7);
+				padding-left: 2em;
+			}
+
+
+			// Custom Bullets
+
+			&:before {
+				width: 0.8em;
+				height: 0.8em;
+				border-radius: 30px;
+				display: block;
+				box-shadow: inset 0px 0px 0px 2px @color__h1--text;
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0.45em;
+			}
+		}
+	}
+
+
+
+	// Ordered List
+	// ------------------------------
+
+
+	ol {
+		margin: 1em 0;
+		padding-left: 0;
+		counter-reset: ordered-counter;
+		li {
+			position: relative;
+			margin: 0;
+			padding: 1em 0 1em 4em;
+			list-style-type: none;
+			font-size: bkscale(@font__p--font-size, 0.9);
+			line-height: bkscale(@font__p--line-height, 0.9);
+
+			@media @bp-global-medium {
+				font-size: bkscale(@font__p--font-size, 0.8);
+				line-height: bkscale(@font__p--line-height, 0.8);
+			}
+
+			@media @bp-global-small {
+				font-size: bkscale(@font__p--font-size, 0.7);
+				line-height: bkscale(@font__p--line-height, 0.7);
+				padding-left: 3em;
+			}
+
+			// Custom Numbers
+
+			&:before {
+				border: 1px solid fade(@color__p--text, 10%);
+				border-radius: 30px;
+				display: inline-block;
+				left: 0;
+				position: absolute;
+				top: 0.8em;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				font-family: @font__h1--font-family;
+				content: counter(ordered-counter);
+				counter-increment: ordered-counter;
+				text-align: center;
+				color: @color__h1--text;
+				display: block;
+				width: 2.5em;
+				height: 2.5em;
+				line-height: 2.5em;
+				text-align: center;
+				font-size: bkscale(@font__p--font-size, 0.8);
+				font-weight: bold;
+
+				@media @bp-global-medium {
+					font-size: bkscale(@font__p--font-size, 0.7);
+				}
+
+				@media @bp-global-small {
+					font-size: bkscale(@font__p--font-size, 0.6);
+				}
+			}
+		}
+	}
+
+
+
+
+	// Block Quote
+	// ------------------------------
+
+
+	blockquote {
+		position: relative;
+		font-family: @font__p--font-family;
+		font-style: oblique;
+		font-size: @font__h4--font-size;
+		line-height: @font__h4--line-height;
+		margin: 2.4em auto;
+		padding: 2em 0 2em 4em;
+		color: @color__h1--text;
+		border-top: 1px solid fade(@color__p--text, 10%);
+		border-bottom: 1px solid fade(@color__p--text, 10%);
+
+		@media @bp-global-medium {
+			font-size: bkscale(@font__h4--font-size, 0.9);
+			line-height: bkscale(@font__h4--line-height, 0.9);
+		}
+
+		@media @bp-global-small {
+			font-size: bkscale(@font__h4--font-size, 0.8);
+			line-height: bkscale(@font__h4--line-height, 0.8);
+			padding-left: 3em;
+		}
+
+		&:before {
+			font-family: 'FontAwesome', sans-serif;
+		    content: "\f10d";
+		    color: @color__h1--text;
+		    position: absolute;
+		    top: 50%;
+		    bottom: 0;
+		    left: 0;
+		    width: 2em;
+		    height: 2em;
+		    text-align: center;
+		    font-size: 2em;
+		    font-style: normal;
+		    height: 2em;
+		    line-height: 40px;
+		    text-align: center;
+		    margin-top: -20px;
+
+		    @media @bp-global-medium {
+				font-size: 1.5em;
+			}
+
+			@media @bp-global-small {
+				font-size: 1.2em;
+			}
+		}
+
+	}
+
+
+
+
+	// Pre
+	// ------------------------------
+
+
+	pre {
+		display: block;
+		margin: 1em 0;
+		padding: 1em;
+		border: none;
+		border-radius: 0;
+		background-color: fade(@color__p--text, 10%);
+		overflow: auto;
+		color: @color__p--text;
+	}
+
+
+
+
+	// Code
+	// ------------------------------
+
+
+	code {
+		font-size: 0.9em;
+		background-color: transparent;
+		color: @color__p--text;
+	}
+
+
+
+
+	// Table
+	// ------------------------------
+
+
+	table {
+		overflow: auto;
+		width: 100%;
+		border: none;
+		border-collapse: separate;
+	  	border-spacing: 2px;
+	  	margin: 2em 0;
+
+		@media @bp-global-medium {
+			font-size: bkscale(@font__p--font-size, 0.9);
+			line-height: bkscale(@font__p--line-height, 0.9);
+		}
+
+		@media @bp-global-small {
+			font-size: bkscale(@font__p--font-size, 0.8);
+			line-height: bkscale(@font__p--line-height, 0.8);
+		}
+	}
+
+	// Table Cell
+
+	td, th {
+		border: none;
+		background-color: fade(@color__p--text, 6%);
+		color: @color__p--text;
+	}
+
+	// Thead
+
+	table thead td {
+		background-color: @color__p--text;
+		color: @color__body--background;
+	}
+
+
+
+
+	// Horizontal Rule
+	// ------------------------------
+
+
+	hr {
+		height: 5px;
+		background-color: darken(@color__body--background, 5%);
+		border: none;
+		margin: 2em 0;
+
+		@media @bp-global-medium {
+		    height: 3px;
+		}
+
+		@media @bp-global-small {
+		    height: 1px;
+		}
+	}
+}
+
+
+
+
+// More, Less Button
+// ------------------------------
+
+
+.button--expand {
+	line-height: bkscale(@font__button--font-size, 2);
+	font-size:  bkscale(@font__button--font-size, 0.8);
+}
+
+
+
+
+
+
+// ---------------------------------
+// Columns variations
+// ---------------------------------
+
+
+
+
+// All Columns
+// ------------------------------
+
+
+@media @bp-global-columns {
+	.responsivecolumns {
+
+	}
+}

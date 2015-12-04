@@ -1,0 +1,348 @@
+// ---------------------------------------------
+// Timeline Template: CSS > Plugins > Blog > Blog Post
+// ---------------------------------------------
+
+
+
+
+// ------------------------------
+// Blog Post
+// ------------------------------
+
+
+.theme-blog-header {
+    time {
+        color: fade(@color__p--text, 50%);
+        display: inline-block;
+        line-height: 28px;
+        font-size: 14px;
+        margin: 0;
+
+        @media @bp-global-small {
+            font-size: 12px;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            width: 1.5em;
+            height: 3px;
+            background-color: @color__primary;
+            margin-top: 0.3em;
+        }
+    }
+
+    .pagetitle-text {
+        font-size: bkscale(@font__h1--font-size, 1.3);
+        line-height: bkscale(@font__h1--line-height, 1.3);
+        font-weight: @font__h1--font-weight;
+        position: relative;
+        display: inline-block;
+        line-height: inherit;
+        margin: 1em 0 2em 0;
+        padding: 0;
+        border-bottom: none;
+        color: @color__h2--text;
+
+        @media @bp-global-medium {
+            font-size: bkscale(@font__h1--font-size, 0.9);
+            line-height: bkscale(@font__h1--line-height, 0.9);
+        }
+
+        @media @bp-global-small {
+            font-size: bkscale(@font__h1--font-size, 0.65);
+            line-height: bkscale(@font__h1--line-height, 0.65);
+        }
+    }
+}
+
+
+
+.blogpost {
+
+
+    // Blog Article
+    // ------------------------------
+    .post-article {
+        position: relative;
+        margin-bottom: 0;
+    }
+
+
+
+
+    // Post Image
+    // ------------------------------
+
+
+    .post-image {
+        margin-bottom: 50px;
+        @media @bp-global-small {
+            margin: 0 -10px 20px;
+        }
+    }
+
+
+
+
+        // Image Link
+        // ------------------------------
+
+
+        .image-link {
+            display: block;
+
+            // Container Width * 0.66
+            height: 0;
+            padding-bottom: 56%;
+
+            background-position: center center;
+            background-size: cover;
+
+            .image {
+                display: none;
+            }
+        }
+
+
+
+
+    // Post Content
+    // ------------------------------
+
+
+    .post-content {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0;
+
+        @media @bp-global-small {
+            width: 100%;
+        }
+    }
+
+
+
+
+    // Post Excerpt / Post Body
+    // ------------------------------
+
+
+    .post-body {
+
+    }
+
+
+
+
+    // Post Header
+    // ------------------------------
+
+
+    .post-header {
+
+    }
+        // Post Title
+        // ------------------------------
+
+
+        .post-title {
+            display: none;
+        }
+
+
+
+
+    // Post Footer
+    // ------------------------------
+
+
+    .post-footer {
+        margin: 40px auto 0;
+        width: 70%;
+
+        @media @bp-global-small {
+            width: 100%;
+        }
+
+
+
+
+
+        // Timestamp
+
+        .timestamp {
+            display: none;
+        }
+    }
+
+
+
+
+    // Post Attributes
+    // ------------------------------
+
+
+    .post-attributes {
+        display: inline-block;
+        margin: 0;
+    }
+
+
+
+
+    // Post Category / Post Tags
+    // ------------------------------
+
+
+    .post-category, .post-tags {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 2em;
+
+        @media @bp-global-medium {
+            margin-bottom: 1em;
+        }
+
+        @media @bp-global-small {
+            margin-bottom: 1em;
+        }
+
+        // Links
+
+        a {
+            font-size: 12px;
+            font-family: @font__h1--font-family;
+            font-weight: @font__h1--font-weight;
+            display: inline-block;
+            line-height: 1.8;
+            margin-top: 0.5em;
+            -webkit-transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: @color__button--background--hover;
+            }
+
+
+            &:first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+
+
+    // Post Category
+    // ------------------------------
+
+
+    .post-category {
+        margin-right: 2em;
+    }
+
+
+
+
+    // Category Title / Tags Title
+    // ------------------------------
+
+
+    .blogpost__category-title,
+    .blogpost__tags-title {
+        font-size: 12px;
+        font-family: @font__h1--font-family;
+        font-weight: @font__h1--font-weight;
+        color: fade(@color__p--text, 40%);
+        display: inline-block;
+        margin-right: 1em;
+    }
+
+
+
+
+    // Tags List
+    // ------------------------------
+
+
+    .blogpost__tag-list {
+    }
+
+
+
+
+    // Tags Item
+    // ------------------------------
+
+
+    .blogpost__tag-item {
+        margin-right: 1em;
+    }
+
+
+
+
+
+
+    // ------------------------------
+    // Sharing Links
+    // ------------------------------
+
+
+
+
+    // Sharing Links
+    // ------------------------------
+
+
+    .blogpost__sharing-links {
+        clear: both;
+    }
+
+    // Network Item
+
+    .blogpost__network-item {
+
+
+        .button {
+            background-color: transparent;
+            color: @color__p--text;
+            box-shadow: none;
+            padding: 0;
+            margin-right: 1em;
+
+            @media @bp-global-small {
+                font-size: 12px;
+            }
+
+            &:before {
+                display: inline-block;
+                width: 2em;
+                height: 2em;
+                text-align: center;
+                line-height: 2em;
+                border-radius: 40px;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+                background-color: fade(@color__p--text, 10%);
+                box-shadow: inset 0px 0px 0px 0px @color__button--background--hover, 0px 0px 0px 0px @color__button--background--hover;
+            }
+
+            &:hover {
+                &:before {
+                    box-shadow: inset 0px 0px 0px 12px @color__button--background--hover, 0px 0px 0px 6px @color__button--background--hover;
+                    color: @color__button--text--hover;
+
+                    @media @bp-global-small {
+                        box-shadow: inset 0px 0px 0px 12px @color__button--background--hover, 0px 0px 0px 3px @color__button--background--hover;
+                    }
+                }
+            }
+        }
+    }
+}

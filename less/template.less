@@ -1,0 +1,430 @@
+// ---------------------------------
+// Timeline Template: CSS > Template
+// ---------------------------------
+
+// 1. #Global Breakpoints
+// 2. #Color Swatches
+// 3. #Floating Footer Fix
+// 4. #Header
+// 5. #Footer
+// 6. #Main Zone
+// 7. #Typography
+
+
+
+
+// ------------------------------
+// 1. #Global Breakpoints
+// ------------------------------
+
+
+
+@bp-global-large: 	~"only screen and (min-width : 1000px)";
+@bp-global-medium: 	~"only screen and (min-width : 700px) and (max-width : 1000px)";
+@bp-global-small: 	~"only screen and (max-width : 700px)";
+
+// When specific styles for responsive columns styles are applied
+@bp-global-columns:   ~"only screen and (min-width : 478px)";
+
+
+
+
+// ------------------------------
+// x. Lightbox overlay fix
+// ------------------------------
+
+.lightboxOverlay {
+    z-index: 10000;
+}
+
+
+
+
+
+// ------------------------------
+// x. #Template Layout
+// ------------------------------
+
+
+body {
+    position: relative;
+    background-color: @color__body--background;
+}
+
+
+
+.navigation--open {
+    height: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+.template-content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+
+
+
+    .page {
+        @media @bp-global-large {
+            padding: 54px 20px;
+        }
+
+        @media @bp-global-medium {
+            padding: 40px 10px;
+        }
+
+        @media @bp-global-small {
+            padding: 0 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+// ------------------------------
+// x. #Ecommerce Bar
+// ------------------------------
+
+
+.ecommerce-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.07);
+    height: 40px;
+    z-index: 1002;
+    @media @bp-global-small {
+        padding-right: 41px;
+        background-color: fade(@color__body--background, 95%);
+    }
+
+
+
+
+    // Container
+    // ------------------------------
+
+
+    .container {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+
+    // Template Basket
+    // ------------------------------
+
+
+    .template-basket {
+        -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+}
+
+
+
+
+
+
+// ------------------------------
+// x. #Page Title
+// ------------------------------
+
+
+.pagetitle-text {
+    font-size: @font__p--font-size;
+    line-height: @font__p--line-height;
+    border-bottom: 1px solid fade(@color__p--text, 10%);
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+
+    @media @bp-global-medium {
+        font-size: bkscale(@font__p--font-size, 0.8);
+        line-height: bkscale(@font__p--line-height, 0.8);
+    }
+
+    @media @bp-global-small {
+        font-size: bkscale(@font__p--font-size, 0.7);
+        line-height: bkscale(@font__p--line-height, 0.7);
+    }
+}
+
+
+
+// ------------------------------
+// 3. #Floating Footer Fix
+// ------------------------------
+
+
+// Avoids Floating Footer
+// ------------------------------
+
+@media @bp-global-large, @bp-global-medium {
+    body {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-box-pack: start;
+        -moz-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        -webkit-box-align: stretch;
+        -moz-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        min-height: 100vh;
+    }
+
+    .template-content {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+}
+
+
+
+// ------------------------------
+// 4. #Header
+// ------------------------------
+
+
+
+
+// Template Header
+// ------------------------------
+
+
+.template-header {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+
+    @media @bp-global-large {
+        padding: 54px 20px;
+    }
+
+    @media @bp-global-small, @bp-global-medium {
+        padding: 40px 10px;
+    }
+
+    // Container
+
+	.container {
+
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+	}
+
+    // Company
+
+    .company {
+        flex: 0 0 auto;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        max-width: 100%;
+    }
+
+    // Template Logo
+
+    .template-logo {
+         .widget {
+            margin: 0 20px 0 0;
+         }
+    }
+
+    // Company Name
+
+    .template-companyname {
+
+    }
+
+    // Navigation
+
+    .template-navigation {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        width: 20px; // IE fix
+        min-width: 10%; // IE fix
+    }
+}
+
+
+
+
+
+
+// ------------------------------
+// 5. #Footer
+// ------------------------------
+
+
+
+// Template Footer
+// ------------------------------
+
+
+.template-footer {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @bp-global-large {
+        padding: 20px 20px;
+    }
+
+    @media @bp-global-small, @bp-global-medium {
+        padding: 16px 10px;
+    }
+
+
+
+    // Container
+    // ------------------------------
+
+
+	.container {
+        width: 70%;
+        margin: 0 auto;
+        border-top: 1px solid fade(@color__p--text, 10%);
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 30px 0;
+
+        @media @bp-global-small {
+            padding: 16px 0;
+            display: block;
+            text-align: center;
+            width: auto;
+        }
+
+
+
+        // Widget
+
+        .widget {
+             @media @bp-global-small {
+                margin: 10px 0;
+             }
+        }
+	}
+}
+
+
+
+
+
+
+
+// ------------------------------
+// 6. #Main Zone
+// ------------------------------
+
+
+
+
+.zone-content {
+    .container {
+
+    }
+
+}
+
+
+
+
+
+
+// -------------------------------
+// 7. #Typography
+// -------------------------------
+
+
+
+
+a {
+	color: @color__p--text;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+

@@ -1,0 +1,122 @@
+// ---------------------------------------------
+// Timeline Template: CSS > Widgets > Image Widget
+// ---------------------------------------------
+
+
+
+
+// Image Caption
+// ------------------------------
+
+
+.imagewidget__caption {
+    margin: 0;
+}
+
+
+// Image Title
+// ------------------------------
+
+
+.imagewidget .image-title {
+    display: inline-block;
+    font-family: @font__h1--font-family;
+    font-size: @font__h4--font-size;
+    font-weight: @font__h4--font-weight;
+    line-height: @font__h4--line-height;
+    color: @color__h1--text;
+
+    @media @bp-global-medium {
+        font-size: bkscale(@font__h4--font-size, 0.9);
+        line-height: bkscale(@font__h4--line-height, 0.9);
+    }
+
+    @media @bp-global-small {
+        font-size: bkscale(@font__h4--font-size, 0.7);
+        line-height: bkscale(@font__h4--line-height, 0.7);
+    }
+}
+
+
+
+
+// Image Description
+// ------------------------------
+
+
+.imagewidget .image-description {
+    font-size: bkscale(@font__p--font-size, 0.85);
+    line-height: bkscale(@font__p--line-height, 0.85);
+    font-family: @font__p--font-family;
+
+    @media @bp-global-medium {
+        font-size: bkscale(@font__p--font-size, 0.75);
+        line-height: bkscale(@font__p--line-height, 0.75);
+    }
+
+    @media @bp-global-small {
+        font-size: bkscale(@font__p--font-size, 0.6);
+        line-height: bkscale(@font__p--line-height, 0.6);
+    }
+}
+
+
+
+
+// Align Left
+// ------------------------------
+
+
+.imagewidget.widget-align-left {
+    &, .caption {
+        text-align: left;
+    }
+
+    .caption, .image-link {
+        float: left;
+    }
+
+    .image-description {
+    }
+
+    .caption {
+
+    }
+}
+
+
+
+
+// Align Right
+// ------------------------------
+
+
+.imagewidget.widget-align-right {
+    &, .caption {
+        text-align: right;
+    }
+
+    .caption, .image-link {
+        float: right;
+    }
+
+    .image-description {
+    }
+
+    .caption {
+
+    }
+}
+
+
+
+
+// Align Center
+// ------------------------------
+
+
+.imagewidget.widget-align-center {
+    &, .caption {
+        text-align: center;
+    }
+}

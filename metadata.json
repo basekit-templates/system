@@ -1,0 +1,259 @@
+{
+    "name": "timeline-v8",
+    "widgetVersion":2,
+    "thumbnail": "timeline.png",
+    "screenshot":"timeline-screenshot.jpg",
+    "templateType":"blog",
+    "pageTypes": ["home"],
+    "tags": {
+    "en": ["blog", "journal", "diary"],
+    "es": ["el blog", "revista", "diario"],
+    "br": ["blog", "jornal", "diário"]
+    },
+     "images":[
+        "images/default.jpg",
+        "images/logo.png"
+    ],
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#FE7070",
+            "color3":"#81CFE0",
+            "color4":"#444444",
+            "color5":"#444444",
+            "color6":"#81CFE0",
+            "color7":"#81CFE0"
+        },
+        "Swatch 2": {
+            "color1":"#f2f2e7",
+            "color2":"#8cab09",
+            "color3":"#ec5c0e",
+            "color4":"#444444",
+            "color5":"#444444",
+            "color6":"#ec5c0e",
+            "color7":"#ec5c0e"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#db0f0f",
+            "color3":"#059de1",
+            "color4":"#444444",
+            "color5":"#444444",
+            "color6":"#81cfe0",
+            "color7":"#81cfe0"
+        },
+        "Swatch 4": {
+            "color1":"#1c1c1c",
+            "color2":"#9eeed2",
+            "color3":"#ffffff",
+            "color4":"#ffffff",
+            "color5":"#ffffff",
+            "color6":"#9eeed2",
+            "color7":"#9eeed2"
+        },
+        "Swatch 5": {
+            "color1":"#f4f4f4",
+            "color2":"#189685",
+            "color3":"#a10f0f",
+            "color4":"#444444",
+            "color5":"#444444",
+            "color6":"#a10f0f",
+            "color7":"#a10f0f"
+        }
+    },
+    "fontSwatch": {
+       "title": "Arvo, PT Sans",
+        "font1": {
+            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-size": "36px",
+            "font-weight": "700",
+            "line-height": "56px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-size": "24px",
+            "font-weight": "700",
+            "line-height": "33px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-size": "20px",
+            "font-weight": "700",
+            "line-height": "30px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-size": "18px",
+            "font-weight": "700",
+            "line-height": "25px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Noto Serif\", Georgia, Arial, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "31px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-size": "15px",
+            "font-weight": "700",
+            "line-height": "26px",
+            "color": "@color-swatch4",
+            "color-hover": "@color-swatch6",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch3"
+         },
+        "font7": {
+            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "27px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch3"
+        },
+        "font8": {
+            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-size": "48px",
+            "font-weight": "700",
+            "line-height": "62px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Noto Serif\", Georgia, Arial, sans-serif",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "33px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-size": "18px",
+            "font-weight": "700",
+            "line-height": "24px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        }
+    },
+    "styles": {
+        "colors": {
+            "color__primary": "@color-swatch2",
+            "color__secondary": "@color-swatch7"
+        },
+        "site": {
+            "color__body--background": "@color-swatch1",
+            "color__link--text": "@color__primary",
+            "color__companyname--text" : "@font-swatch10-color",
+            "font__companyname--font-family" : "@font-swatch10-font-family",
+            "font__companyname--font-size" : "@font-swatch10-font-size",
+            "font__companyname--font-weight" : "@font-swatch10-font-weight",
+            "font__companyname--line-height" : "@font-swatch10-line-height",
+            "font__companyname--letter-spacing" : "@font-swatch10-letter-spacing"
+        },
+        "typography": {
+            "color__p--text" : "@font-swatch5-color",
+            "color__h1--text" : "@font-swatch1-color",
+            "color__h2--text" : "@font-swatch2-color",
+            "color__h3--text" : "@font-swatch3-color",
+            "color__h4--text" : "@font-swatch4-color",
+            "font__h1--font-family" : "@font-swatch1-font-family",
+            "font__h1--font-size" : "@font-swatch1-font-size",
+            "font__h1--font-weight" : "@font-swatch1-font-weight",
+            "font__h1--line-height" : "@font-swatch1-line-height",
+            "font__h1--letter-spacing" : "@font-swatch1-letter-spacing",
+            "font__h2--font-family" : "@font-swatch2-font-family",
+            "font__h2--font-size" : "@font-swatch2-font-size",
+            "font__h2--font-weight" : "@font-swatch2-font-weight",
+            "font__h2--line-height" : "@font-swatch2-line-height",
+            "font__h2--letter-spacing" : "@font-swatch2-letter-spacing",
+            "font__h3--font-family" : "@font-swatch3-font-family",
+            "font__h3--font-size" : "@font-swatch3-font-size",
+            "font__h3--font-weight" : "@font-swatch3-font-weight",
+            "font__h3--line-height" : "@font-swatch3-line-height",
+            "font__h3--letter-spacing" : "@font-swatch3-letter-spacing",
+            "font__h4--font-family" : "@font-swatch4-font-family",
+            "font__h4--font-size" : "@font-swatch4-font-size",
+            "font__h4--font-weight" : "@font-swatch4-font-weight",
+            "font__h4--line-height" : "@font-swatch4-line-height",
+            "font__h4--letter-spacing" : "@font-swatch4-letter-spacing",
+            "font__p--font-family" : "@font-swatch5-font-family",
+            "font__p--font-size" : "@font-swatch5-font-size",
+            "font__p--font-weight" : "@font-swatch5-font-weight",
+            "font__p--line-height" : "@font-swatch5-line-height",
+            "font__p--letter-spacing" : "@font-swatch5-letter-spacing"
+        },
+        "button": {
+            "color__button--background" : "@color-swatch3",
+            "color__button--background--hover" : "@color__primary",
+            "color__button--text" : "@font-swatch7-color",
+            "color__button--text--hover" : "@font-swatch7-color",
+            "font__button--font-family" : "@font-swatch7-font-family",
+            "font__button--font-size" : "@font-swatch7-font-size",
+            "font__button--font-weight" : "@font-swatch7-font-weight",
+            "font__button--line-height" : "@font-swatch7-line-height",
+            "font__button--letter-spacing" : "@font-swatch7-letter-spacing"
+        },
+        "navigation": {
+            "color__navigation--text" : "@font-swatch6-color",
+            "color__navigation--text--selected" : "@color__primary",
+            "color__navigation--text--hover" : "fade(@color__navigation--text, 50%)",
+            "font__navigation--font-family" : "@font-swatch6-font-family",
+            "font__navigation--font-size" : "@font-swatch6-font-size",
+            "font__navigation--font-weight" : "@font-swatch6-font-weight",
+            "font__navigation--line-height" : "@font-swatch6-line-height",
+            "font__navigation--letter-spacing" : "@font-swatch6-letter-spacing"
+        },
+        "feature": {
+            "color__feature-headline--text" : "@font-swatch8-color",
+            "color__feature-strapline--text" : "@font-swatch9-color",
+            "font__feature-headline--font-family" : "@font-swatch8-font-family",
+            "font__feature-headline--font-size" : "@font-swatch8-font-size",
+            "font__feature-headline--font-weight" : "@font-swatch8-font-weight",
+            "font__feature-headline--line-height" : "@font-swatch8-line-height",
+            "font__feature-headline--letter-spacing" : "@font-swatch8-letter-spacing",
+            "font__feature-strapline--font-family" : "@font-swatch9-font-family",
+            "font__feature-strapline--font-size" : "@font-swatch9-font-size",
+            "font__feature-strapline--font-weight" : "@font-swatch9-font-weight",
+            "font__feature-strapline--line-height" : "@font-swatch9-line-height",
+            "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing"
+        },
+        "form": {
+            "color__form-legend--text" : "@color__h2--text"
+        },
+        "gallery": {
+            "color__gallery-caption--background" : "@color__primary",
+            "color__gallery-title--text" : "@color__body--background",
+            "color__gallery-description--text" : "@color__body--background"
+        },
+        "slideshow": {
+            "color__slideshow-caption--background" : "@color__primary",
+            "color__slideshow-title--text" : "@color__body--background",
+            "color__slideshow-description--text" : "@color__body--background"
+        },
+        "ecommerce": {
+            "color__ecomproductslist-product-item--background" : "@color__primary",
+            "color__ecomproductslist-product-title--text" : "@color__body--background",
+            "color__ecombasket--background" : "darken(@color__body--background, 10%)"
+        },
+        "menu": {
+            "color__menu-item-title--text" : "@color__primary",
+            "color__menu-item-featured-title--text" : "@color__menu-item-title--text",
+            "color__menu-item-featured-title--background" : "@color__primary"
+        }
+    }
+}

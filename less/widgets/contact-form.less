@@ -1,0 +1,128 @@
+// ------------------------------
+// Timeline Template: CSS > Widgets > Contact Form
+// ------------------------------
+
+
+
+
+// Fieldset
+// ------------------------------
+
+
+.contactform__fieldset {
+	position: relative;
+}
+
+
+// Legend
+// ------------------------------
+
+
+.contactform__legend {
+	font-family: @font__h3--font-family;
+	font-size: @font__h3--font-size;
+	line-height: @font__h3--line-height;
+	font-weight: @font__h3--font-weight;
+	color: @color__form-legend--text;
+	margin-bottom: 0.6em;
+
+	@media @bp-global-medium {
+		font-size: bkscale(@font__h2--font-size, 0.8);
+		line-height: bkscale(@font__h2--line-height, 0.8);
+	}
+
+	@media @bp-global-small {
+		font-size: bkscale(@font__h2--font-size, 0.7);
+		line-height: bkscale(@font__h2--line-height, 0.7);
+	}
+}
+
+
+
+// Form Group
+// ------------------------------
+
+
+.contactform__form-group {
+	margin-bottom: 20px;
+
+	@media @bp-global-small {
+		margin-bottom: 10px;
+	}
+
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+
+	// Label Email
+
+	.label--email {
+		display: none;
+	}
+
+	// Label
+	.label {
+		font-family: @font__h2--font-family;
+		font-size: bkscale(@font__p--font-size, 0.8);
+		font-weight: bold;
+	}
+
+
+	// Textarea
+
+	.textarea {
+
+	}
+}
+
+
+
+
+// From Body
+// ------------------------------
+
+
+.contactform__form-body {
+
+	// Form Group
+
+	.form-group {
+		padding-left: 2em;
+		position: relative;
+
+		@media @bp-global-small {
+			padding-left: 1.5em;
+		}
+
+		// Icons
+
+		&:before {
+			font-family: 'FontAwesome', sans-serif;
+			position: absolute;
+			left: 0;
+			color: @color__primary;
+			font-size: 14px;
+		}
+	}
+
+	.form-group:nth-child(1) {
+		&:before {
+			content: "\f003";
+			top: 0.4em;
+		}
+	}
+	.form-group:nth-child(2) {
+		&:before {
+			content: "\f036";
+			top: 0.15em;
+		}
+	}
+}
+
+
+
+
+
+

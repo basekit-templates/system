@@ -1,0 +1,530 @@
+// --------------------------------------
+// Timeline Template: CSS > Widgets > Slideshow
+// --------------------------------------
+
+
+
+// ---------------------------------
+// Breakpoints for slideshow layouts
+// ---------------------------------
+
+
+@slideshow-large: ~"only screen and (min-width : 1300px)";
+@slideshow-medium: ~"only screen and (min-width : 850px) and (max-width : 1300px)";
+@slideshow-small: ~"only screen and (max-width : 850px)";
+
+
+
+
+
+.responsiveslideshow__slide-item {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+
+
+
+
+// ------------------------------
+// Responsive Slideshow
+// ------------------------------
+
+.widget__responsiveslideshow {
+	position: relative;
+	padding-bottom: 40px;
+
+	@media @bp-global-small {
+		padding-bottom: 40px;
+		margin-bottom: 20px;
+	}
+
+	// Figure
+
+	.figure {
+		min-height: 0;
+	}
+}
+
+
+
+
+// ------------------------------
+// Slides List
+// ------------------------------
+
+.responsiveslideshow__slides-list {
+	min-height: 100px;
+	padding-bottom: 50%;
+	position: relative;
+	// overflow: hidden;
+}
+
+
+// ------------------------------
+// Slideshow Item
+// ------------------------------
+
+
+.responsiveslideshow__slide-item {
+	position: relative;
+}
+
+// Prevents two slides from displaying at the same time
+// because of slow JS state changes
+
+.slide-item.current + .slide-item {
+	display: none;
+}
+
+.responsiveslideshow__image {
+	display: none;
+}
+
+
+
+
+// ------------------------------
+// Figure
+// ------------------------------
+
+
+.responsiveslideshow__figure {
+	min-height: 100px;
+	padding-bottom: 50%;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+
+// ------------------------------
+// Slide Navigation
+// ------------------------------
+
+
+.slide-navigation {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-height: 40px;
+	background-color: @color__p--text;
+	margin: 0;
+
+	@media @bp-global-small {
+		min-height: 40px;
+	}
+
+
+
+
+	// Button
+	// ------------------------------
+
+
+	.button {
+		position: absolute;
+		top: 0;
+		padding: 0;
+		display: block;
+		text-align: center;
+		background-color: transparent;
+		box-shadow: none;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 36px;
+
+
+
+		&:hover {
+			background-color: @color__button--background--hover;
+		}
+
+		// Icon
+		&:before {
+			margin: 0;
+			color: @color__button--text;
+			background-color: transparent;
+			font-size: 28px;
+
+		}
+		&:hover:before {
+			color: @color__button--text--hover;
+		}
+	}
+
+
+
+
+	// Control Text
+	// ------------------------------
+
+
+	.control-text {
+		display: none;
+	}
+}
+
+
+
+
+// Previous Button
+// ------------------------------
+
+
+.responsiveslideshow__previous-button {
+	left: 0;
+	// Icon
+
+	&:before {
+		content: '\f104';
+		display: block;
+		margin: 0;
+	}
+}
+
+
+
+
+// Next Button
+// ------------------------------
+
+
+.responsiveslideshow__next-button {
+	right: 0;
+
+	// Icon
+
+	&:before {
+		content: '\f105';
+		display: block;
+		margin: 0;
+		padding-left: 0.1em;
+	}
+
+    &:after {
+        display: none;
+    }
+}
+
+
+
+
+// Pause Toggle
+// ------------------------------
+
+
+.responsiveslideshow__pause-toggle {
+	left: 41px;
+
+	@media @bp-global-small {
+		left: 50%;
+		margin-left: -20px;
+	}
+
+	.pause-toggle-only & {
+		left: 0;
+		@media @bp-global-small {
+			left: 0;
+  			margin-left: 0;
+		}
+	}
+	// Icon
+
+	&:before {
+		display: block;
+		margin: 0;
+		font-size: 14px !important;
+	}
+
+	// Play Icon
+
+	&.pause:before {
+		content: '\f04b';
+	}
+}
+
+
+
+
+
+// ------------------------------
+// Slideshow Captions
+// ------------------------------
+
+
+
+
+// Caption
+// ------------------------------
+
+
+.responsiveslideshow .caption {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	padding: 16px;
+	background-color: transparent;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 30%;
+    background-color: fade(@color__slideshow-caption--background, 50%);
+
+    @media @bp-global-small {
+        width: 100%;
+        right: 0;
+        top: auto;
+        padding: 10px;
+    }
+
+}
+
+
+
+
+// Image Title, Image Description
+// ------------------------------
+
+
+.responsiveslideshow__image-title, .responsiveslideshow__image-description {
+	width: auto;
+}
+
+
+
+
+// Image Title
+// ------------------------------
+
+
+.responsiveslideshow__image-title {
+    font-family: @font__h1--font-family;
+    font-weight: @font__h4--font-weight;
+    font-size: bkscale(@font__p--font-size, 0.8);
+    line-height: bkscale(@font__p--line-height, 0.8);
+    color: @color__slideshow-title--text;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+
+    @media @bp-global-medium {
+        font-size: bkscale(@font__h4--font-size, 0.9);
+        line-height: bkscale(@font__h4--line-height, 0.9);
+    }
+
+    @media @bp-global-small {
+        font-size: bkscale(@font__h4--font-size, 0.7);
+        line-height: bkscale(@font__h4--line-height, 0.7);
+    }
+}
+
+
+
+
+// Image Description
+// ------------------------------
+
+
+.responsiveslideshow__image-description {
+    position: relative;
+  	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+
+    font-size: bkscale(@font__p--font-size, 0.8);
+    line-height: bkscale(@font__p--line-height, 0.8);
+    font-family: @font__p--font-family;
+    padding: 0.3em 0 0 0;
+    max-width: 100%;
+    color: @color__slideshow-description--text;
+    text-overflow: ellipsis;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+
+    @media @bp-global-medium {
+        font-size: bkscale(@font__p--font-size, 0.7);
+        line-height: bkscale(@font__p--line-height, 0.7);
+    }
+
+    @media @bp-global-small {
+        font-size: bkscale(@font__p--font-size, 0.6);
+        line-height: bkscale(@font__p--line-height, 0.6);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// ------------------------------
+// Slideshow Pagination
+// ------------------------------
+
+.slide-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 101px;
+    right: 101px;
+    min-height: 40px;
+
+    @media @bp-global-small {
+        min-height: 40px;
+        top: auto;
+        bottom: -40px;
+        left: 0;
+        right: 0;
+        min-height: 0;
+
+    }
+}
+
+
+
+// Pagination List
+// ------------------------------
+
+
+.responsiveslideshow__pagination-list {
+    text-align: center;
+    font-size: 0.1px;
+    min-height: 40px;
+    overflow: hidden;
+    padding-top: 13px;
+
+    @media @bp-global-small {
+        padding-top: 10px;
+    }
+}
+
+
+
+
+
+// Pagination Item
+// ------------------------------
+
+
+.responsiveslideshow .responsiveslideshow__pagination-item {
+	display: inline-block;
+	margin: 3px 2px;
+
+	// Button
+
+	.button {
+		background-color: fade(@color__slideshow-caption--background, 60%);
+		line-height: 1;
+		box-shadow: none;
+		width: 10px;
+		height: 10px;
+		display: block;
+		overflow: hidden;
+		text-indent: -1000%;
+		padding: 0;
+
+        @media @mobile {
+            width: 6px;
+            height: 6px;
+        }
+
+        @media @bp-global-small  {
+            background-color: fade(@color__p--text, 20%);
+        }
+
+		&:hover {
+			background-color: fade(@color__slideshow-caption--background, 70%);
+		}
+	}
+
+	// Selected Button
+
+	&.selected .button {
+		background-color: @color__slideshow-caption--background;
+	}
+}
+
+
+
+
+
+
+
+
+
+// ---------------------------------
+// Columns variations
+// ---------------------------------
+
+
+
+
+// All Columns
+// ------------------------------
+
+
+
+.responsivecolumns {
+
+    .slide-pagination {
+        top: auto;
+        bottom: -36px;
+        left: 0;
+        right: 0;
+        min-height: 0;
+    }
+
+    .widget__responsiveslideshow {
+        margin-bottom: 20px;
+    }
+
+    .responsiveslideshow .responsiveslideshow__pagination-item {
+
+        .button {
+            background-color: @color__p--text;
+        }
+
+        &.selected .button {
+            background-color: @color__slideshow-caption--background;
+        }
+    }
+
+    .responsiveslideshow .caption {
+        top: auto;
+        width: 100%;
+    }
+
+}
+

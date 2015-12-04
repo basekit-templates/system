@@ -1,15 +1,10 @@
 {
-    "name": "timeline-v8",
+    "name": "system",
     "widgetVersion":2,
-    "thumbnail": "timeline.png",
-    "screenshot":"timeline-screenshot.jpg",
-    "templateType":"blog",
+    "thumbnail": "system.png",
+    "screenshot":"system-screenshot.jpg",
+    "templateType":"standard",
     "pageTypes": ["home"],
-    "tags": {
-    "en": ["blog", "journal", "diary"],
-    "es": ["el blog", "revista", "diario"],
-    "br": ["blog", "jornal", "diário"]
-    },
      "images":[
         "images/default.jpg",
         "images/logo.png"

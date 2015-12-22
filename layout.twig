@@ -29,18 +29,21 @@
 
 	<body class="{{ page.backgroundClass }} no-touch{% if app.mode != 'published' and app.mode != 'site-preview' %} edit-mode{% endif %}">
 
-		{% include "includes/header.twig" %}
-
 		<div class="template-content">
 
-			<div class="container">
+			<div class="container  container--main">
+
+				{% include "includes/header.twig" %}
+
 				{% block content %}
 				{% endblock %}
+
+				{% include "includes/footer.twig" %}
+
 			</div>
 
 		</div>
 
-		{% include "includes/footer.twig" %}
 
 	    {% include basekit.bodyScript %}
 

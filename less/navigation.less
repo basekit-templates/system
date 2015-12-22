@@ -76,20 +76,6 @@
 	        height: 50px;
 	        z-index: 10002;
 		}
-
-	    &:before {
-	        top: 0;
-	        background-image: -webkit-linear-gradient(fade(@color__navigation--background, 100%) 0%, fade(@color__navigation--background, 0%) 100%);
-	        background-image: -o-linear-gradient(fade(@color__navigation--background, 100%) 0%,fade(@color__navigation--background, 0%) 100%);
-	        background-image: linear-gradient(fade(@color__navigation--background, 100%) 0%, fade(@color__navigation--background, 0%) 100%);
-		}
-
-		&:after {
-	        bottom: 0;
-	        background-image: -webkit-linear-gradient(fade(@color__navigation--background, 0%) 0%, @color__navigation--background 100%);
-	        background-image: -o-linear-gradient(fade(@color__navigation--background, 0%) 0%, @color__navigation--background 100%);
-	        background-image: linear-gradient(fade(@color__navigation--background, 0%) 0%, @color__navigation--background 100%);
-	    }
     }
 }
 
@@ -103,6 +89,7 @@
 	transform: translate(0, 0);
 	opacity: 1;
 	pointer-events: all;
+	background-color: @color__body--background;
 }
 
 
@@ -196,6 +183,7 @@
 
 .navigation-item .item-name {
 	padding: 0.5em 0;
+	-webkit-font-smoothing: antialiased;
 
 	&:hover {
 		color: @color__navigation--text--hover;
@@ -387,10 +375,12 @@
 .navigation-toggle {
 	.animation;
 	// Displays as icon's middle bar
-	background-color: @color__button--background;
+	height: 3px;
+	background-color: @color__navigation--text;
+	border-bottom: 1px solid fade(@color__p--text, 10%);
 	background-clip: content-box;
 	width: 41px;
-	height: 41px;
+	height: 42px;
 	padding: 19px 10px;
 	margin: 0;
 	text-indent: 200%;
@@ -423,7 +413,7 @@
 		position: absolute;
 		left: 10px;
 		display: block;
-		background: @color__button--background;
+		background: @color__navigation--text;
 		margin-right: 0;
 		margin-left: 0;
 		-webkit-transition: all 0.25s ease-in-out;
@@ -436,7 +426,6 @@
 
 	&:before {
 		top: 13px;
-
 	}
 
 	// Bottom bar
@@ -467,11 +456,13 @@
 
 
 		&:before {
-			top: 20px; background: @color__button--background; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);
+			top: 20px;
+			background: @color__button--background; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);
 
 		}
 		&:after {
-			bottom: 18px; background: @color__button--background; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
+			bottom: 18px;
+			background: @color__button--background; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);
 		}
 	}
 }

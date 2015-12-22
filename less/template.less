@@ -20,8 +20,8 @@
 
 
 @bp-global-large: 	~"only screen and (min-width : 1000px)";
-@bp-global-medium: 	~"only screen and (min-width : 700px) and (max-width : 1000px)";
-@bp-global-small: 	~"only screen and (max-width : 700px)";
+@bp-global-medium: 	~"only screen and (min-width : 769px) and (max-width : 1000px)";
+@bp-global-small: 	~"only screen and (max-width : 769px)";
 
 // When specific styles for responsive columns styles are applied
 @bp-global-columns:   ~"only screen and (min-width : 478px)";
@@ -63,13 +63,19 @@ body {
 
 
 .template-content {
-    max-width: 1000px;
+    max-width: 1100px;
     width: 100%;
     margin: 0 auto;
 }
 
 
 
+
+.container--main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
 
 
@@ -208,10 +214,6 @@ body {
 
 
 .template-header {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-
 
     @media @bp-global-large {
         padding: 30px 0;
@@ -377,16 +379,7 @@ body {
 // 6. #Main Zone
 // ------------------------------
 
-
-
-
-.zone-content {
-    .container {
-
-    }
-
-}
-
+// No styles
 
 
 
@@ -405,5 +398,3 @@ a {
         text-decoration: none;
     }
 }
-
-

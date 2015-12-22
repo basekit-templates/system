@@ -62,11 +62,11 @@
     }
 
     @media @bp-global-medium {
-        min-height: 250px;
+        min-height: 300px;
     }
 
     @media @bp-global-small {
-        min-height: 200px;
+        min-height: 250px;
     }
 
 }
@@ -80,6 +80,12 @@
 
 .feature__content-wrap {
     width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+
+    @media @tablet {
+        max-width: 100%;
+    }
 }
 
 
@@ -142,4 +148,8 @@
 
 .feature__button {
     margin-top: 24px;
+
+    @media @tablet {
+        margin-top: 10px;
+    }
 }

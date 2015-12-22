@@ -12,10 +12,10 @@
 
 
 .basket-toggle {
-    background-color: darken(@color__body--background, 5%);
+    background-color: transparent;
     padding: 0 14px;
-    width: 40px;
-    height: 40px;
+    width: 41px;
+    height: 41px;
     line-height: 40px;
     letter-spacing: 0;
     font-size: 14px;
@@ -26,6 +26,8 @@
 
     @media @bp-global-small {
         border-right: 1px solid fade(@color__p--text, 10%);
+        border-bottom: 1px solid fade(@color__p--text, 10%);
+        border-left: 1px solid fade(@color__p--text, 10%);
     }
 
 
@@ -45,7 +47,7 @@
         top: 0;
         left: 0;
         font-size: 21px;
-        color: #e0e3fa;
+        color: @color__navigation--text;
     }
 
     .item-count {

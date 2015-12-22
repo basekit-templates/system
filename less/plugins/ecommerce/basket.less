@@ -23,6 +23,10 @@
     box-shadow:  inset 0px 0px 0px 2px fade(@color__primary, 0%);
     color: @color__p--text;
     text-indent: 100px;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
 
     @media @bp-global-small {
         border-bottom: 1px solid fade(@color__p--text, 10%);
@@ -31,9 +35,8 @@
 
 
     &:hover {
-        background-color: transparent;
-        box-shadow:  inset 0px 0px 0px 2px @color__primary;
-        color: @color__button--background--hover;
+        background-color: @color__body--background;
+        box-shadow: inherit;
     }
 
     &:before {

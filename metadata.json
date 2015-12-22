@@ -60,7 +60,7 @@
     "fontSwatch": {
        "title": "Arvo, PT Sans",
         "font1": {
-            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "36px",
             "font-weight": "700",
             "line-height": "56px",
@@ -68,7 +68,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "24px",
             "font-weight": "700",
             "line-height": "33px",
@@ -76,7 +76,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "20px",
             "font-weight": "700",
             "line-height": "30px",
@@ -84,7 +84,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "18px",
             "font-weight": "700",
             "line-height": "25px",
@@ -92,7 +92,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Noto Serif\", Georgia, Arial, sans-serif",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "31px",
@@ -100,9 +100,9 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "15px",
-            "font-weight": "700",
+            "font-weight": "400",
             "line-height": "26px",
             "color": "@color-swatch4",
             "color-hover": "@color-swatch6",
@@ -111,9 +111,9 @@
             "background-color-hover": "@color-swatch3"
          },
         "font7": {
-            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "14px",
-            "font-weight": "700",
+            "font-weight": "400",
             "line-height": "27px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
@@ -121,7 +121,7 @@
             "background-color-hover": "@color-swatch3"
         },
         "font8": {
-            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "48px",
             "font-weight": "700",
             "line-height": "62px",
@@ -129,7 +129,7 @@
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "\"Noto Serif\", Georgia, Arial, sans-serif",
+            "font-family": "\"Open Sans\", Helvetica, Verdana, sans-serif",
             "font-size": "24px",
             "font-weight": "400",
             "line-height": "33px",
@@ -137,10 +137,10 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Noto Sans\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Ubuntu\", Candara, Futura, sans-serif",
             "font-size": "18px",
             "font-weight": "700",
-            "line-height": "24px",
+            "line-height": "28px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         }

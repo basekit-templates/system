@@ -94,7 +94,7 @@
 
             // Container Width * 0.66
             height: 0;
-            padding-bottom: 56%;
+            padding-bottom: 40%;
 
             background-position: center center;
             background-size: cover;
@@ -309,7 +309,6 @@
 
         .button {
             background-color: transparent;
-            color: @color__p--text;
             box-shadow: none;
             padding: 0;
             margin-right: 1em;
@@ -331,17 +330,6 @@
                 transition: all 0.2s ease-in-out;
                 background-color: fade(@color__p--text, 10%);
                 box-shadow: inset 0px 0px 0px 0px @color__button--background--hover, 0px 0px 0px 0px @color__button--background--hover;
-            }
-
-            &:hover {
-                &:before {
-                    box-shadow: inset 0px 0px 0px 12px @color__button--background--hover, 0px 0px 0px 6px @color__button--background--hover;
-                    color: @color__button--text--hover;
-
-                    @media @bp-global-small {
-                        box-shadow: inset 0px 0px 0px 12px @color__button--background--hover, 0px 0px 0px 3px @color__button--background--hover;
-                    }
-                }
             }
         }
     }

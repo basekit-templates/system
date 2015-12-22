@@ -66,23 +66,6 @@ body {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-
-
-
-
-    .page {
-        @media @bp-global-large {
-            padding: 54px 20px;
-        }
-
-        @media @bp-global-medium {
-            padding: 40px 10px;
-        }
-
-        @media @bp-global-small {
-            padding: 0 10px;
-        }
-    }
 }
 
 
@@ -231,11 +214,11 @@ body {
 
 
     @media @bp-global-large {
-        padding: 54px 20px;
+        padding: 30px 0;
     }
 
     @media @bp-global-small, @bp-global-medium {
-        padding: 40px 10px;
+        padding: 20px 0;
     }
 
     // Container
@@ -290,7 +273,7 @@ body {
 
     .template-logo {
          .widget {
-            margin: 0 20px 0 0;
+            margin: 0 14px 0 0;
          }
     }
 
@@ -330,13 +313,14 @@ body {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
+    border-top: 1px solid fade(@color__p--text, 10%);
 
     @media @bp-global-large {
-        padding: 20px 20px;
+        padding: 30px 0;
     }
 
     @media @bp-global-small, @bp-global-medium {
-        padding: 16px 10px;
+        padding: 20px 0;
     }
 
 
@@ -346,9 +330,6 @@ body {
 
 
 	.container {
-        width: 70%;
-        margin: 0 auto;
-        border-top: 1px solid fade(@color__p--text, 10%);
         display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
@@ -367,10 +348,8 @@ body {
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
-        padding: 30px 0;
 
         @media @bp-global-small {
-            padding: 16px 0;
             display: block;
             text-align: center;
             width: auto;

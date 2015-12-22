@@ -416,7 +416,7 @@
 
 .product-item-image  {
     background-color: transparent;
-    box-shadow: inset 0px 0px 0px 1px #E9E9E7;
+    box-shadow: inset 0px 0px 0px 1px lighten(@color__body--background, 6%);
     width: 50%;
     padding-bottom: 50%;
     position: relative;
@@ -513,6 +513,7 @@
 .product-item-title {
     font-size: @font__h4--font-size;
     line-height: @font__h4--line-height;
+    color: @color__feature-strapline--text;
     margin-bottom: 0;
     max-width: 100%;
 
@@ -541,7 +542,7 @@
 .product-item-price {
     font-size: bkscale(@font__p--font-size, 0.82);
     line-height: bkscale(@font__p--line-height, 0.82);
-    color: @color__body--background;
+    color: @color__feature-strapline--text;
     display: inline-block;
 }
 

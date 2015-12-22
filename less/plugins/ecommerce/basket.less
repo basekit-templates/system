@@ -12,7 +12,7 @@
 
 
 .basket-toggle {
-    background-color: transparent;
+    background-color: darken(@color__body--background, 5%);
     padding: 0 14px;
     width: 40px;
     height: 40px;
@@ -45,7 +45,7 @@
         top: 0;
         left: 0;
         font-size: 21px;
-        color: fade(@color__button--background--hover, 50%);
+        color: #e0e3fa;
     }
 
     .item-count {
@@ -60,7 +60,7 @@
         position: absolute;
         font-size: 13px;
         text-align: center;
-        color: @color__body--background;
+        color: @color__secondary;
 
         @media @bp-global-medium {
             bottom: 10px;
@@ -291,7 +291,7 @@
         .basket-item-name {
             padding-bottom: 10px;
             display: block;
-            color: @color__p--text;
+            color: @color__secondary;
             font-family: @font__h3--font-family;
             font-size: @font__h3--font-size;
             line-height: @font__h3--line-height;
@@ -327,7 +327,7 @@
         // Item Price
 
         .basket-item-price {
-            color: @color__p--text;
+            color: @color__h1--text;
             font-size: @font__h4--font-size;
             @media @bp-global-medium {
                 font-size: bkscale(@font__h4--font-size, 0.9);

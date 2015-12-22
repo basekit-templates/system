@@ -89,8 +89,11 @@ textarea {
     padding: 1em;
     display: block;
     border-color: fade(@color__p--text, 10%);
-    border-style: solid;
-    border-width: 1px 1px 0 1px;
+    border-style: 1px solid;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+
     &:focus {
         box-shadow: inset 0px -2px 0px 0px @color__primary;
     }
@@ -115,14 +118,10 @@ textarea {
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    text-align: left;
     -webkit-appearance: none;
-    box-shadow: inset 0px 0 0px 0 @color__button--background--hover;
     color: @color__button--text;
     background-color: @color__button--background;
-    border-radius: 0;
-    position: relative;
-    z-index: 100;
+    text-transform: uppercase;
 
 
 

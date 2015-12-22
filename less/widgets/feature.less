@@ -48,20 +48,21 @@
     -ms-flex-align: center;
     align-items: center;
     background-size: cover;
-    padding: 0 0 3% 0;
     position: relative;
     overflow: auto;
-    margin: 0 -10px;
+    margin: 0;
+    background-color: @color__primary;
+    text-align: center;
 
     // Hack for Mobile IE, needs fixed width
     height: 100px;
 
     @media @bp-global-large {
-        min-height: 400px;
+        min-height: 350px;
     }
 
     @media @bp-global-medium {
-        min-height: 300px;
+        min-height: 250px;
     }
 
     @media @bp-global-small {
@@ -78,22 +79,7 @@
 
 
 .feature__content-wrap {
-    padding: 0;
-    position: relative;
-    z-index: 1002;
-}
-
-
-
-
-
-
-// Content Inner Wrap
-// ------------------------------
-
-
-.feature__content-inner-wrap {
-    padding: 10px;
+    width: 100%;
 }
 
 
@@ -155,5 +141,5 @@
 
 
 .feature__button {
-    margin-top: 1em;
+    margin-top: 24px;
 }

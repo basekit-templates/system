@@ -33,41 +33,27 @@
 	// Icon
 
 	&:before {
-		font-size: 18px;
+		// font-size: 14px;
 		display: block;
-		width: 36px;
-		height: 36px;
-		line-height: 36px;
-		background-color:  @color__button--background;
-		color: @color__button--text;
+		width: 32px;
+		height: 32px;
+		line-height: 31px;
+		background-color: transparent;
+		color: @color__socialicons--icon;
 		margin: 0 auto;
 		border-radius: 50px;
+		border: 2px solid @color__socialicons--border;
 		-webkit-transition: all 0.2s ease-in-out;
 	    -moz-transition: all 0.2s ease-in-out;
 	    -o-transition: all 0.2s ease-in-out;
 	    transition: all 0.2s ease-in-out;
-
-		@media @tablet {
-			font-size: 20px;
-			width: 40px;
-			height: 40px;
-			line-height: 40px;
-		}
-
-		@media @mobile {
-			font-size: 16px;
-			width: 30px;
-			height: 30px;
-			line-height: 30px;
-		}
-
-
 	}
 
 	// Icon hover
 
 	&:hover:before {
-		background-color: darken(@color__button--background, 6%);
+		color: lighten(@color__socialicons--icon, 8%);
+		border-color: lighten(@color__socialicons--border, 8%);
 	}
 }
 

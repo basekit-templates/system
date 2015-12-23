@@ -152,7 +152,7 @@
         },
         "site": {
             "color__body--background": "#30313a",
-            "color__link--text": "@color__primary",
+            "color__link--text": "@color__secondary",
             "color__companyname--text" : "@color__secondary",
 
             "font__companyname--font-family" : "@font-swatch10-font-family",

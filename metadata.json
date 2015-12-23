@@ -238,9 +238,9 @@
             "color__gallery-description--text" : "@color__feature-strapline--text"
         },
         "slideshow": {
-            "color__slideshow-caption--background" : "@color__primary",
-            "color__slideshow-title--text" : "@color__body--background",
-            "color__slideshow-description--text" : "@color__body--background"
+            "color__slideshow-caption--background": "@color__body--background",
+            "color__slideshow-title--text": "@color__feature-headline--text",
+            "color__slideshow-description--text": " @color__feature-strapline--text"
         },
         "ecommerce": {
             "color__ecomproductslist-product-item--background" : "darken(@color__body--background, 3%)",

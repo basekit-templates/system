@@ -242,6 +242,10 @@
             "color__slideshow-title--text": "@color__feature-headline--text",
             "color__slideshow-description--text": " @color__feature-strapline--text"
         },
+        "socialicons": {
+            "color__socialicons--border": "@color__primary",
+            "color__socialicons--icon": "@color__primary"
+        },
         "ecommerce": {
             "color__ecomproductslist-product-item--background" : "darken(@color__body--background, 3%)",
             "color__ecomproductslist-product-title--text" : "@color__primary",

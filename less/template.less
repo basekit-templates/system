@@ -46,6 +46,12 @@
 // ------------------------------
 
 
+// iOS fix of VH unit
+html, body {
+    width: -webkit-calc(100% - 0px);
+}
+
+
 body {
     position: relative;
     background-color: @color__body--background;

@@ -138,8 +138,15 @@
 
 .feature__button {
     margin-top: 24px;
+    background-color: @color__feature-button--background;
+    color: @color__feature-button--text;
 
     @media @tablet {
         margin-top: 10px;
+    }
+
+    &:hover {
+        background-color: @color__feature-button--background--hover;
+        color: @color__feature-button--text--hover;
     }
 }

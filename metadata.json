@@ -197,7 +197,7 @@
             "color__button--background" : "#5061de",
             "color__button--background--hover" : "@color__secondary",
             "color__button--text" : "@color__secondary",
-            "color__button--text--hover" : "color__secondary",
+            "color__button--text--hover" : "@color__secondary",
             "font__button--font-family" : "@font-swatch7-font-family",
             "font__button--font-size" : "13px",
             "font__button--font-weight" : "@font-swatch7-font-weight",
@@ -215,6 +215,7 @@
             "font__navigation--letter-spacing" : "@font-swatch6-letter-spacing"
         },
         "feature": {
+            "color__feature-content--background": "@color__primary",
             "color__feature--background": "@color__primary",
             "color__feature-headline--text" : "@color__secondary",
             "color__feature-strapline--text" : "#d9ddff",
@@ -227,7 +228,11 @@
             "font__feature-strapline--font-size" : "15px",
             "font__feature-strapline--font-weight" : "400",
             "font__feature-strapline--line-height" : "28px",
-            "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing"
+            "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing",
+            "color__feature-button--background" : "#5061de",
+            "color__feature-button--background--hover" : "@color__secondary",
+            "color__feature-button--text" : "@color__secondary",
+            "color__feature-button--text--hover" : "@color__secondary"
         },
         "form": {
             "color__form-legend--text" : "@color__h2--text"

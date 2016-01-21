@@ -216,7 +216,6 @@
         },
         "feature": {
             "color__feature-content--background": "@color__primary",
-            "color__feature--background": "@color__primary",
             "color__feature-headline--text" : "@color__secondary",
             "color__feature-strapline--text" : "#d9ddff",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
@@ -230,7 +229,6 @@
             "font__feature-strapline--line-height" : "28px",
             "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing",
             "color__feature-button--background" : "#5061de",
-            "color__feature-button--background--hover" : "@color__secondary",
             "color__feature-button--text" : "@color__secondary"
         },
         "form": {

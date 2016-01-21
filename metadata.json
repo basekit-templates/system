@@ -231,8 +231,7 @@
             "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing",
             "color__feature-button--background" : "#5061de",
             "color__feature-button--background--hover" : "@color__secondary",
-            "color__feature-button--text" : "@color__secondary",
-            "color__feature-button--text--hover" : "@color__secondary"
+            "color__feature-button--text" : "@color__secondary"
         },
         "form": {
             "color__form-legend--text" : "@color__h2--text"

@@ -216,7 +216,7 @@
         },
         "feature": {
             "color__feature--background": "@color__primary",
-            "color__feature-content--background": "@color__primary",
+            "color__feature-content--background": "#26292f",
             "color__feature-headline--text" : "@color__secondary",
             "color__feature-strapline--text" : "#d9ddff",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",

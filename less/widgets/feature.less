@@ -4,6 +4,7 @@
 
 
 .feature {
+    background-color: @color__feature--background;
     margin-bottom: 30px;
     position: relative;
     z-index: 1001;
@@ -19,7 +20,7 @@
 
 
 .feature__background-image {
-
+    background-size: cover;
 }
 
 
@@ -65,7 +66,7 @@
     text-align: center;
     width: 100%;
     min-height: 100px;
-    background-color: fade(@color__feature-content--background, 90%);
+    background-color: fade(@color__feature-content--background, 80%);
 
     @media @bp-global-large {
         min-height: 350px;

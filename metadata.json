@@ -215,6 +215,7 @@
             "font__navigation--letter-spacing" : "@font-swatch6-letter-spacing"
         },
         "feature": {
+            "color__feature--background": "@color__primary",
             "color__feature-content--background": "@color__primary",
             "color__feature-headline--text" : "@color__secondary",
             "color__feature-strapline--text" : "#d9ddff",

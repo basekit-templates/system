@@ -195,7 +195,7 @@
         },
         "button": {
             "color__button--background" : "#5061de",
-            "color__button--background--hover" : "@color__secondary",
+            "color__button--background--hover" : "darken(@color__button--background, 15%)",
             "color__button--text" : "@color__secondary",
             "color__button--text--hover" : "@color__secondary",
             "font__button--font-family" : "@font-swatch7-font-family",

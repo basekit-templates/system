@@ -232,13 +232,14 @@ if($("body.edit-mode").length > 0) {
 
 
 
-if(publishedmode==true) {
+// Open Navigation Overlay
+$(document).on("click", ".extendednavigation__navigation-toggle", function() {
+    $( ".widget__extendednavigation" ).toggleClass( "open" );
+    $( "body, html" ).toggleClass( "navigation--open" );
+});
 
-    // Open Navigation Overlay
-    $(document).on("click", ".extendednavigation__navigation-toggle", function() {
-        $( ".widget__extendednavigation" ).toggleClass( "open" );
-        $( "body, html" ).toggleClass( "navigation--open" );
-    });
+
+if(publishedmode==true) {
 
     // Close navigation overlay when clicked on the screen
 
@@ -248,7 +249,7 @@ if(publishedmode==true) {
         }
     });
 
-    // Togglse class open to display/hide folders
+    // Toggles class open to display/hide folders
 
     $( ".navigation-item.folder .item-name--parent" ).each(function() {
         $( this ).click(function() {

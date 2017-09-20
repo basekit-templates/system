@@ -235,8 +235,7 @@ if($("body.edit-mode").length > 0) {
 if(publishedmode==true) {
 
     // Open Navigation Overlay
-
-     $( ".extendednavigation__navigation-toggle" ).click(function() {
+    $(document).on("click", ".extendednavigation__navigation-toggle", function() {
         $( ".widget__extendednavigation" ).toggleClass( "open" );
         $( "body, html" ).toggleClass( "navigation--open" );
     });
@@ -256,7 +255,6 @@ if(publishedmode==true) {
             $( this ).parent( ".navigation-item.folder" ).toggleClass( "open" );
         });
     });
-
 }
 
 

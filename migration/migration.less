@@ -33,6 +33,19 @@
     }
 
 
+    [data-name="row"] .select-wrap:after {
+        right: 12px;
+    }
+
+    [data-name="row"] [data-name="gallery"] .gallery__image-link {
+        padding-bottom: 25%;
+
+        @media @mobile {
+            padding-bottom: 50%;
+        }
+    }
+
+
 
 
     // Migration styles
@@ -47,9 +60,10 @@
     [data-widget-type="feature"],
     [data-widget-type="pagetitle"],
     .template-header,
-    .theme-blog-header time {
+    .theme-blog-header time,
+    .template-footer {
         width: 90%;
-        max-width: 990px;
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -57,7 +71,7 @@
         display: block;
         margin: 0 auto;
     }
-    
+
     
     // Adds spacing to a section when a widget follows it
     #page-zones__main > [data-name="row"] + .widget:not([data-name="row"]),

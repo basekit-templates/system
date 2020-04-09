@@ -1,0 +1,137 @@
+// -----------------------------
+// Migration Styles
+// -----------------------------
+
+
+#migrated-site {
+
+
+    // Stylesheet overrides
+    // -----------------------------
+
+
+    .container,
+    .template-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    
+    // Edit
+    &.edit {
+        .ecommerce-bar {
+            right: 100px;
+            
+            @media @tablet {
+                right: 0;
+            }
+        }
+        .basket-toggle {
+            text-indent: 200px;
+        }
+    }
+
+
+    &.row-editing,
+    &.is-move-mode {
+
+        .template-header {
+            display: none;
+        }
+    }
+
+
+    [data-name="row"] .select-wrap:after {
+        right: 12px;
+    }
+
+    [data-name="row"] [data-name="gallery"] .gallery__image-link {
+        padding-bottom: 25%;
+
+        @media @mobile {
+            padding-bottom: 50%;
+        }
+    }
+
+
+
+
+    // Migration styles
+    // -----------------------------
+    
+    
+    // Applies spacing to widgets to mimic container width
+    .empty-zone,
+    #page-zones__main:empty,
+    #page-zones__main > .widget:not([data-name="row"]),
+    .row:not(.row--width-no-padding) .row__container,
+    [data-widget-type="feature"],
+    [data-widget-type="pagetitle"],
+    .template-header,
+    .theme-blog-header time,
+    .template-footer {
+        width: 90%;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .theme-blog-header time {
+        display: block;
+        margin: 0 auto;
+    }
+
+    
+    // Adds spacing to a section when a widget follows it
+    #page-zones__main > [data-name="row"] + .widget:not([data-name="row"]),
+    #page-zones__main > .widget:not([data-name="row"]) + [data-name="row"]:not(:last-child),
+    &.edit #page-zones__main-overlay + .widget:not([data-name="row"]) {
+        margin-top: 80px;
+        
+        @media @tablet {
+            margin-top: 40px;
+        }
+        @media @mobile {
+            margin-top: 20px;
+        }
+    }
+    
+    
+    // First
+    #page-zones__main > .widget:not([data-name="row"]):first-child {
+        margin-top: 30px;
+    }
+    .page--default #page-zones__main > .widget:not([data-name="row"]):first-child {
+        margin-top: 0;
+    }
+
+    
+    // Move spacing to last widget in the main zone (not sections)
+    #page-zones__main > .widget:not([data-name="row"]):last-child {
+        margin-bottom: 20px;
+    }
+    
+    
+    // Remove spacing on last widget in section column
+    [data-name="row"] [data-name="responsivecolumns"] .column .widget {
+        margin-bottom: 0;
+    }
+    
+    
+    // Widget styles
+    [data-name="row"] {
+        .social-link:before {
+            border: none;
+        }
+        .widget[data-name="ecomproduct"] {
+            margin-top: 0;
+        }
+        .blogpostlist .post-items {
+            padding-top: 0;
+        }
+        .blogpostlist .read-more:before {
+            height: auto;
+        }
+    }
+
+}
